@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python:
+    #image: python:2.7
+    build: ./
+    working_dir: /opt/src
+    volumes:
+      - ./src:/opt/src
+    command: tail -f /dev/null
+
